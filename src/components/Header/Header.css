@@ -3,5 +3,10 @@ header {
     top: 0;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: right;
+}
+
+
+.social-nav ul{
+    display:flex;
 }
