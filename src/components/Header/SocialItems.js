@@ -17,10 +17,10 @@ const SocialItems = () => {
                     <EmailIcon />
                 </SocialItem>
                 <li>
-                        <a className='resume-button' href='resume.pdf' target='_blank'>
-                            <div>Resume</div>
-                        </a>
-                    </li>
+                    <a className='resume-button' href='resume.pdf' target='_blank'>
+                        <div>Resume</div>
+                    </a>
+                </li>
             </ul>
         </nav>
     );

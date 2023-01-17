@@ -1,12 +1,37 @@
 header {
-    position: absolute;
+    position: sticky;
     top: 0;
+    left: 0;
+    height: 7vh;
+    margin-bottom: -7vh;
     width: 100%;
     display: flex;
     justify-content: right;
+    align-items: center;
 }
 
+.social-nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
 
-.social-nav ul{
-    display:flex;
+.resume-button {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .resume-button {
+        display: flex;
+        align-items: center;
+        padding: 0.7rem;
+        border: 1px var(--primary-color) solid;
+        border-radius: 5px;
+        color: var(--primary-color);
+    }
+    .social-nav ul {
+        gap: 3rem;
+        padding-right: 2rem;
+    }
 }

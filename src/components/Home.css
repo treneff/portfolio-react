@@ -1,0 +1,56 @@
+.intro-name {
+    font-size: 2.5rem;
+}
+
+.intro-info p {
+    font-size: 1.3rem;
+}
+
+.intro-button {
+    display: flex;
+    align-items: center;
+    border: 1px var(--primary-color) solid;
+    border-radius: 5px;
+    color: var(--primary-color);
+    padding: 2rem;
+}
+
+.intro-button:hover {
+    opacity: 0.5;
+    transition: opacity 0.5s;
+}
+
+.external-ref {
+    color: var(--primary-color);
+    text-decoration: none;
+    text-underline-offset: 7px;
+    position: relative;
+}
+
+.external-ref::after {
+    content: '';
+    position: absolute;
+    width: 95%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--primary-color);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.external-ref:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .intro-name{
+        font-size:4rem;
+    }
+    .intro-info p{
+        font-size:1.6rem;
+    }
+}
