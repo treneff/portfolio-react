@@ -8,6 +8,11 @@ header {
     display: flex;
     justify-content: right;
     align-items: center;
+    z-index: 1;
+    animation: 1.7s entryTop;
+}
+header::after {
+    transform: -100%;
 }
 
 .social-nav ul {
@@ -30,6 +35,11 @@ header {
         border-radius: 5px;
         color: var(--primary-color);
     }
+    .resume-button:hover {
+        opacity: 0.5;
+        transition: opacity 0.5s;
+    }
+
     .social-nav ul {
         gap: 3rem;
         padding-right: 2rem;

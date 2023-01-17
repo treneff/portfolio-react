@@ -2,11 +2,12 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import './Main.css'
+import './Main.css';
 import Home from '../components/Home';
 import About from '../components/About';
 import Skills from '../components/Skills';
 import Work from '../components/Work';
+import ErrorPage from '../components/ErrorPage';
 
 const Main = () => {
     const location = useLocation();
@@ -31,6 +32,7 @@ const Main = () => {
                 <Route path='/about' element={<About />} />
                 <Route path='/skills' element={<Skills />} />
                 <Route path='/work' element={<Work />} />
+                <Route path='/*' element={<ErrorPage />} />
             </Routes>
         </main>
     );

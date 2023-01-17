@@ -1,3 +1,5 @@
+/* page transition animations */
+
 @keyframes slideIn {
     from {
         opacity: 0;
@@ -26,4 +28,25 @@
 
 .slideOut {
     animation: 0.5s slideOut forwards;
+}
+
+
+/* header and footer animations */
+
+@keyframes entryTop {
+    from {
+        transform: translate(0, -100px);
+    }
+    to {
+        transform: translate(0px, 0);
+    }
+}
+
+@keyframes entryBottom {
+    from {
+        transform: translate(0, 100px);
+    }
+    to {
+        transform: translate(0px, 0);
+    }
 }

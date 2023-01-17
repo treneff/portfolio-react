@@ -7,6 +7,7 @@ footer {
     width: 100%;
     display: flex;
     justify-content: center;
+    animation: 1.7s entryBottom;
 }
 
 .nav-button {
@@ -20,8 +21,14 @@ footer {
 .navbar {
     display: none;
 }
-
+@media screen and (min-width: 768px) {
+    footer{
+        height:15vh;
+        margin-top:-15vh;
+    }
+}
 @media screen and (min-width: 1024px) {
+    
     .nav-button {
         display: none;
     }
@@ -36,7 +43,6 @@ footer {
         font-size: 1.5rem;
     }
     .navbar ul li a{
-        color: var(--secondary-color);
         display:flex;
         justify-content: center;
         align-items: center;
