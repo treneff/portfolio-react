@@ -14,6 +14,8 @@ const Main = () => {
     const [displayLocation, setDisplayLocation] = useState(location);
     const [transitionStage, setTransitionStage] = useState('slideIn');
 
+
+    //setup page transition
     useEffect(() => {
         if (location !== displayLocation) setTransitionStage('slideOut');
     }, [location, displayLocation]);

@@ -1,5 +1,5 @@
 import './Skills.css';
-
+import StorageIcon from '@mui/icons-material/Storage';
 
 const Skills = () => {
     return (
@@ -37,6 +37,7 @@ const Skills = () => {
                     </ul>
                 </div>
                 <div className='skills-category'>
+                    <StorageIcon />
                     <h2>Technologies</h2>
                     <ul>
                         <li>ReactJS</li>
