@@ -1,7 +1,11 @@
-import React from 'react';
+import ProjectList from './ProjectList';
 
 const Work = () => {
-    return <section>Work</section>;
+    return (
+        <section>
+            <ProjectList />
+        </section>
+    );
 };
 
 export default Work;
