@@ -6,27 +6,102 @@ header {
     margin-bottom: -7vh;
     width: 100%;
     display: flex;
-    justify-content: right;
+    justify-content: space-between;
+    background-color: var(--background-color);
     align-items: center;
     z-index: 1;
     animation: 1.7s entryTop;
 }
+
 header::after {
     transform: -100%;
 }
 
-.social-nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-}
-
-.resume-button {
+.logo {
+    font-family: 'Sacramento', sans-serif;
     display: none;
 }
 
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    
+    background-color: var(--background-color);
+    transition: 1s;
+    transform: translateY(-100vh);
+    z-index: 9;
+    
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-direction: column;
+    height:100%;
+    font-size:2rem;
+}
+
+.resume-button{
+    display:none;
+}
+
+.nav-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--primary-color);
+}
+
+.nav-close-button {
+    position: absolute;
+}
+
+.responsive-nav {
+    transform: none;
+}
+
 @media screen and (min-width: 1024px) {
+    .logo {
+        display: block;
+        font-size: 3rem;
+        padding: 2rem;
+    }
+    .navbar {
+        position: relative;
+        display: flex;
+        transform: none;
+        width: auto;
+        justify-content: center;
+        padding: 0 2rem;
+    }
+    .navbar ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+    }
+    .navbar a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 5vw;
+    }
+    .navbar a:hover {
+        color: var(--primary-color);
+    }
+    .navbar p {
+        color: var(--primary-color);
+        font-weight: 600;
+    }
     .resume-button {
         display: flex;
         align-items: center;
@@ -39,9 +114,7 @@ header::after {
         opacity: 0.5;
         transition: opacity 0.5s;
     }
-
-    .social-nav ul {
-        gap: 3rem;
-        padding-right: 2rem;
+    .nav-button {
+        display: none;
     }
 }

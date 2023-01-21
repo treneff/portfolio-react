@@ -1,12 +1,22 @@
 import './Header.css';
-import SocialItems from './SocialItems';
+import { useRef } from 'react';
+import Navigation from './Navigation';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
-const Header = () => {
+const Footer = () => {
+    const navRef = useRef();
+    const showNavBar = () => {
+        navRef.current.classList.toggle('responsive-nav');
+    };
     return (
         <header>
-            <SocialItems />
+            <div className='logo'>Trenev</div>
+            <Navigation showNavBar={showNavBar} navRef={navRef} />
+            <button onClick={showNavBar} className='nav-button' fontSize='large'>
+                <KeyboardArrowDownIcon />
+            </button>
         </header>
     );
 };
 
-export default Header;
+export default Footer;

@@ -1,8 +1,12 @@
-import './Footer.css'
-import Navigation from './Navigation';
+import './Footer.css';
+import SocialItems from './SocialItems';
 
-const Footer = () => {
-    return <footer><Navigation/><div className = "nav-button"></div></footer>;
+const Header = () => {
+    return (
+        <footer>
+            <SocialItems />
+        </footer>
+    );
 };
 
-export default Footer;
+export default Header;

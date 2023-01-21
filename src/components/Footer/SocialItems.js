@@ -16,11 +16,6 @@ const SocialItems = () => {
                 <SocialItem link='mailto:treneff@protonmail.com'>
                     <EmailIcon />
                 </SocialItem>
-                <li>
-                    <a className='resume-button' href='resume.pdf' target='_blank'>
-                        <div>Resume</div>
-                    </a>
-                </li>
             </ul>
         </nav>
     );
