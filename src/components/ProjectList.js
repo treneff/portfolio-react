@@ -3,7 +3,7 @@ import { useState } from 'react';
 const allProjects =[
     { name: 'Amazing Project', technology: 'react', index: 1 },
     { name: 'Great Project', technology: 'css', index: 2 },
-    { name: 'Phenomenal Project', technology: 'python', index: 4 },
+    { name: 'Phe Project', technology: 'python', index: 4 },
     { name: 'Phenomenal Project', technology: 'python', index: 5 },
     { name: 'Phenomenal Project', technology: 'python', index: 6 },
     { name: 'Phenomenal Project', technology: 'python', index: 7 },
