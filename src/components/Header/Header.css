@@ -28,7 +28,6 @@ header::after {
     right: 0;
     height: 100%;
     width: 100%;
-    
     background-color: var(--background-color);
     transition: 1s;
     transform: translateY(-100vh);
@@ -84,7 +83,7 @@ header::after {
         padding: 0 2rem;
     }
     .navbar ul {
-        display: flex;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         font-size: 1.5rem;
@@ -109,6 +108,7 @@ header::after {
         border: 1px var(--primary-color) solid;
         border-radius: 5px;
         color: var(--primary-color);
+        min-width: 120px;
     }
     .resume-button:hover {
         opacity: 0.5;
