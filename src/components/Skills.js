@@ -1,5 +1,4 @@
 import './Skills.css';
-import StorageIcon from '@mui/icons-material/Storage';
 
 const Skills = () => {
     return (
@@ -7,44 +6,37 @@ const Skills = () => {
             <h1>Skills</h1>
             <div className='skills-container'>
                 <div className='skills-category'>
-                    <h2>Javascript</h2>
+                    <h2>Languages</h2>
                     <ul>
-                        <li>ReactJS</li>
-                        <li>Vanilla.js</li>
+                        <li>Javascript</li>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </div>
+                <div className='skills-category'>
+                    <h2>Frameworks</h2>
+                    <ul>
+                        <li>React</li>
                         <li>Express</li>
                         <li>Node</li>
-                        <li>Node</li>
+                        <li>TailwindCSS</li>
+                        <li>Flask</li>
+                        <li>Jinja</li>
+                        <li>Spring</li>
                     </ul>
                 </div>
                 <div className='skills-category'>
-                    <h2>Python</h2>
-                    <ul>
-                        <li>ReactJS</li>
-                        <li>JavaScript</li>
-                        <li>CSS</li>
-                        <li>Styled Components</li>
-                        <li>HTML</li>
-                    </ul>
-                </div>
-                <div className='skills-category'>
-                    <h2>Databases</h2>
-                    <ul>
-                        <li>ReactJS</li>
-                        <li>JavaScript</li>
-                        <li>CSS</li>
-                        <li>Styled Components</li>
-                        <li>HTML</li>
-                    </ul>
-                </div>
-                <div className='skills-category'>
-                    <StorageIcon />
                     <h2>Technologies</h2>
                     <ul>
-                        <li>ReactJS</li>
-                        <li>JavaScript</li>
-                        <li>CSS</li>
-                        <li>Styled Components</li>
-                        <li>HTML</li>
+                        <li>MongoDB</li>
+                        <li>PostgreSQL</li>
+                        <li>Git</li>
+                        <li>Github</li>
+                        <li>ComandLine</li>
+                        <li>IntelliJ IDEA</li>
+                        <li>Visual Studio Code</li>
                     </ul>
                 </div>
             </div>

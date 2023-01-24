@@ -1,5 +1,4 @@
 .skills-section {
-    padding: 10vh 0;
     justify-content: center;
     align-items: center;
 }
@@ -9,13 +8,14 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    gap:1rem;
 }
 .skills-category {
     border: var(--secondary-color) solid 5px;
+    border-radius: 7px;
     min-width: 15rem;
     min-height:15rem;
     text-align: center;
-    padding: 2rem;
 }
 
 @media screen and (min-width: 415px) {

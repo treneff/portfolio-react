@@ -30,12 +30,12 @@ const Navigation = ({ showNavBar, navRef }) => {
                     </Link>
                 </li>
                 <li>
-                    <a className='resume-button' href='resume.pdf' target='_blank'>
+                    <a className='resume-button' href='./assets/resume.pdf' target='_blank'>
                         <div>Resume</div>
                     </a>
                 </li>
             </ul>
-            <button onClick={showNavBar} className='nav-button nav-close-button'>
+            <button aria-label="close mobile navigation button" name="nav-buton" onClick={showNavBar} className='nav-button nav-close-button'>
                 <CloseIcon />
             </button>
         </nav>

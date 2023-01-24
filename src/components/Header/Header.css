@@ -87,12 +87,13 @@ header::after {
         justify-content: center;
         align-items: center;
         font-size: 1.5rem;
+        width:auto;
     }
     .navbar a {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 5vw;
+        
     }
     .navbar a:hover {
         color: var(--primary-color);

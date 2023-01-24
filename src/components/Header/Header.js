@@ -1,7 +1,8 @@
 import './Header.css';
 import { useRef } from 'react';
 import Navigation from './Navigation';
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+
+import MenuIcon from '@mui/icons-material/Menu';
 
 const Footer = () => {
     const navRef = useRef();
@@ -12,8 +13,8 @@ const Footer = () => {
         <header>
             <div className='logo'>Trenev</div>
             <Navigation showNavBar={showNavBar} navRef={navRef} />
-            <button onClick={showNavBar} className='nav-button' fontSize='large'>
-                <KeyboardArrowDownIcon />
+            <button aria-label="mobile navigation button" onClick={showNavBar} className='nav-button' fontSize='large'>
+                <MenuIcon />
             </button>
         </header>
     );

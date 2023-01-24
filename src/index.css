@@ -9,7 +9,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', sans-serif;
     background-color: var(--background-color);
     color: var(--primary-color);
 }
@@ -75,13 +75,12 @@ p {
     margin-inline-start: 0;
     margin-inline-end: 0;
 }
-@media screen and (min-width: 375px) {
+
+
+@media screen and (min-width: 1024px) {
     section {
         padding: 0;
     }
-}
-
-@media screen and (min-width: 1024px) {
     body {
         overflow: hidden;
     }
