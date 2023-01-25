@@ -1,6 +1,8 @@
 # Portfolio Website George Trenev
 
-A React JS application with the aim to present the projects I've worked on so far and utilise good practices in acessibility, SEO and performance. Currently in the process optimising performance to enable score of 100 on all of those categories with Google Lighthouse. 
+A React JS application with the aim to present the projects I've worked on so far and utilise good practices in acessibility, SEO and performance. <br>
+Disclaimer: Currently in the process optimising performance to enable score of 100 on all of those categories with Google Lighthouse. 
+
 
 ## Contents 
 
